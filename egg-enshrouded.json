@@ -1,6 +1,6 @@
 {
     "exported_at": "2026-04-06T02:01:23+00:00",
-    "name": "Enshrouded",
+    "name": "Enshrouded 1.0.0",
     "author": "paulvilla",
     "uuid": "8e1cd8d8-214c-49ef-91fe-ca84ffd78b14",
     "description": "Enshrouded is a game of survival, crafting, and Action RPG combat, set within a sprawling voxel-based continent. As you journey across the mountains and deserts of an open world, you are free to choose your path and shape your destiny.\\n\\nModified by Paul Villa (paulvilla.dev@gmail.com). Added configurable group passwords (Admin, Friend, Visitor) from the panel, difficulty preset selector (Default, Relaxed, Hard, Survival, Custom), default query port 15637, and full initial server configuration.",
