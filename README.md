@@ -1,4 +1,4 @@
-# Enshrouded 1.0 Dedicated Server Egg for Pelican Panel
+# Enshrouded 1.0.0 Dedicated Server Egg for Pelican Panel
 
 [![Enshrouded](https://img.shields.io/badge/Game-Enshrouded%201.0-blue)](https://enshrouded.com)
 [![Pelican](https://img.shields.io/badge/Panel-Pelican%2FPterodactyl-green)](https://pelican.dev)

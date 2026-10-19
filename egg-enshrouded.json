@@ -150,5 +150,10 @@
             "sort": 10,
             "field_type": "text"
         }
-    ]
+    ],
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PANEL",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": "https://github.com/paulvilla/egg-enshrouded"
+    }
 }
