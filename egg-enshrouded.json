@@ -41,28 +41,6 @@
             "field_type": "text"
         },
         {
-            "name": "[STEAM] Steam App ID",
-            "description": "Steam App ID",
-            "env_variable": "SRCDS_APPID",
-            "default_value": "2278520",
-            "user_viewable": false,
-            "user_editable": false,
-            "rules": "required|string|in:2278520",
-            "sort": 1,
-            "field_type": "text"
-        },
-        {
-            "name": "[SERVER] Steam Query Port",
-            "description": "Steam Query Port",
-            "env_variable": "QUERY_PORT",
-            "default_value": "15637",
-            "user_viewable": true,
-            "user_editable": true,
-            "rules": "required|numeric",
-            "sort": 2,
-            "field_type": "text"
-        },
-        {
             "name": "[SERVER] Max Players",
             "description": "Maximum number of players allowed",
             "env_variable": "MAX_PLAYERS",
@@ -70,7 +48,7 @@
             "user_viewable": true,
             "user_editable": true,
             "rules": "required|numeric",
-            "sort": 3,
+            "sort": 1,
             "field_type": "text"
         },
         {
@@ -81,7 +59,7 @@
             "user_viewable": true,
             "user_editable": true,
             "rules": "nullable|string",
-            "sort": 4,
+            "sort": 2,
             "field_type": "text"
         },
         {
@@ -92,7 +70,7 @@
             "user_viewable": true,
             "user_editable": true,
             "rules": "required|string|in:Default,Relaxed,Hard,Survival,Custom",
-            "sort": 5,
+            "sort": 3,
             "field_type": "text"
         },
         {
@@ -103,7 +81,51 @@
             "user_viewable": true,
             "user_editable": true,
             "rules": "nullable|string",
+            "sort": 4,
+            "field_type": "text"
+        },
+        {
+            "name": "[SERVER] Steam Query Port",
+            "description": "Steam Query Port",
+            "env_variable": "QUERY_PORT",
+            "default_value": "15637",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|numeric",
+            "sort": 5,
+            "field_type": "text"
+        },
+        {
+            "name": "[SERVER] Visitor password",
+            "description": "Leave it blank to allow visitors to join the server (no permissions)",
+            "env_variable": "VISITOR_PW",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string",
             "sort": 6,
+            "field_type": "text"
+        },
+        {
+            "name": "[STEAM] Steam App ID",
+            "description": "Steam App ID",
+            "env_variable": "SRCDS_APPID",
+            "default_value": "2278520",
+            "user_viewable": false,
+            "user_editable": false,
+            "rules": "required|string|in:2278520",
+            "sort": 7,
+            "field_type": "text"
+        },
+        {
+            "name": "[SERVER] Auto Update",
+            "description": "Enable automatic updates on boot",
+            "env_variable": "AUTO_UPDATE",
+            "default_value": "1",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "boolean",
+            "sort": 8,
             "field_type": "text"
         },
         {
@@ -114,38 +136,16 @@
             "user_viewable": true,
             "user_editable": true,
             "rules": "boolean",
-            "sort": 7,
+            "sort": 9,
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Visitor password",
-            "description": "Password for the Visitor user group",
-            "env_variable": "VISITOR_PW",
-            "default_value": "",
-            "user_viewable": true,
-            "user_editable": true,
-            "rules": "nullable|string",
-            "sort": 8,
-            "field_type": "text"
-        },
-        {
-            "name": "WINDOWS_INSTALL",
+            "name": "[PROTON] WINDOWS_INSTALL",
             "description": "",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
             "user_viewable": false,
             "user_editable": false,
-            "rules": "boolean",
-            "sort": 9,
-            "field_type": "text"
-        },
-        {
-            "name": "[SERVER] Auto Update",
-            "description": "Enable automatic updates on boot",
-            "env_variable": "AUTO_UPDATE",
-            "default_value": "1",
-            "user_viewable": true,
-            "user_editable": true,
             "rules": "boolean",
             "sort": 10,
             "field_type": "text"
