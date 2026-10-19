@@ -13,7 +13,7 @@
 
 - **Proton runtime** (Windows build via Proton) — better performance than Wine on Linux hosts.
 - **Difficulty presets** selectable from the panel: *Default, Relaxed, Hard, Survival, Custom*.
-- **Group passwords** configurable from the panel for *Admin*, *Member*, *Friend* and *Visitor*.
+- **Group passwords** configurable from the panel for *Admin*, *Member* and *Visitor*.
 - **Default query port** pre-selected to **15637**.
 - **Safe initial config generation**: the server always installs with the *Default* preset first; change difficulty later from the panel after the first successful boot.
 - **Idempotent install**: if `enshrouded_server.json` already exists, the installer skips it so user edits are never reset.
@@ -52,7 +52,6 @@
 | Steam Query Port | `15637` | UDP port used by the server browser. |
 | Admin password | *(empty)* | Password for the **Admin** user group. |
 | Member password | *(empty)* | Password for the **Member** user group. |
-| Friend password | *(empty)* | Password for the **Friend** user group. |
 | Visitor password | *(empty)* | Password for the **Visitor** user group. |
 | Max Players | `16` | Maximum simultaneous players (1-16). |
 | Server Configuration | `Default` | Difficulty preset. Install with Default, change later. |
@@ -69,7 +68,6 @@ The egg creates three built-in groups with fixed permissions:
 |-------|----------|-------------|------------|-----------|-------------|
 | **Admin** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Member** | ❌ | ✅ | ✅ | ✅ | ✅ |
-| **Friend** | ❌ | ❌ | ✅ | ❌ | ❌ |
 | **Visitor** | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 Passwords are injected during installation and can be updated later from the panel (requires a server restart).
