@@ -85,17 +85,6 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Member password",
-            "description": "Password for the Member user group (trusted player)",
-            "env_variable": "MEMBER_PW",
-            "default_value": "",
-            "user_viewable": true,
-            "user_editable": true,
-            "rules": "nullable|string",
-            "sort": 5,
-            "field_type": "text"
-        },
-        {
             "name": "⚠️ [Server] Server Configuration",
             "description": "IMPORTANT: Always install with Default first. Configure ports, then change difficulty from this panel after installation. Do not select another preset before the first install.",
             "env_variable": "DIFFICULTY_PRESET",
@@ -103,6 +92,17 @@
             "user_viewable": true,
             "user_editable": true,
             "rules": "required|string|in:Default,Relaxed,Hard,Survival,Custom",
+            "sort": 5,
+            "field_type": "text"
+        },
+        {
+            "name": "[SERVER] Member password",
+            "description": "Password for the Member user group (trusted player)",
+            "env_variable": "MEMBER_PW",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string",
             "sort": 6,
             "field_type": "text"
         },
